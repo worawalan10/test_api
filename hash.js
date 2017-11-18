@@ -1,6 +1,4 @@
 var crypto = require('crypto');
-var salt = hash.genRandomString(16); // a salt of length 16
-var passwordData = hash.sha512(password, salt); // return obj.
 
 exports.genRandomString = function(length){
     return crypto.randomBytes(Math.ceil(length/2))
